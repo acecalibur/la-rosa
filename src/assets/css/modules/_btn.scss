@@ -1,0 +1,16 @@
+.btn {
+  display: inline-block;
+
+  &--cta {
+    padding: 9px 18px;
+    border-radius: 4px;
+    background-color: #e0e1e2;
+    color: $font-color-primary;
+    transition: background-color 0.25s ease, color 0.25s ease;
+
+    &:hover {
+      color: #fff;
+      background-color: $font-color-secondary;
+    }
+  }
+}

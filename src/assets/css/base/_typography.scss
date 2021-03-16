@@ -1,0 +1,19 @@
+.headline {
+  margin: 0;
+  text-align: center;
+
+  &__sub {
+    color: $font-color-secondary;
+    font-family: $font-family-secondary;
+    font-size: 6.2rem;
+    font-weight: 300;
+    line-height: 1;
+  }
+
+  &__main {
+    font-size: 4.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    // text-transform: capitalize;
+  }
+}
