@@ -7,9 +7,14 @@
     padding-bottom: 4.5rem;
   }
 
-  @include atLG {
+  @include atMD {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  @include atLG {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
   }
 
   &--hero {
@@ -19,5 +24,17 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--bg-between {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--recipes {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/recipes-bg.jpg');
   }
 }

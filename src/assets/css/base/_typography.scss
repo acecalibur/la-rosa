@@ -10,8 +10,16 @@
     font-weight: 300;
     line-height: 1;
 
+    &::first-letter {
+      font-size: 8.5rem;
+    }
+
     &--body {
       font-size: 5rem;
+
+      &::first-letter {
+        font-size: 7.5rem;
+      }
     }
   }
 
