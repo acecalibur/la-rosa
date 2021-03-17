@@ -1,0 +1,12 @@
+.flex {
+  display: block;
+
+  @include atMD {
+    display: flex;
+    justify-content: space-between;
+
+    .col__6 {
+      flex: 0 0 45%;
+    }
+  }
+}

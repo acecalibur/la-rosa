@@ -2,18 +2,45 @@
   margin: 0;
   text-align: center;
 
-  &__sub {
+  &__title {
+    display: block;
     color: $font-color-secondary;
     font-family: $font-family-secondary;
-    font-size: 6.2rem;
+    font-size: 6rem;
     font-weight: 300;
     line-height: 1;
+
+    &--body {
+      font-size: 5rem;
+    }
   }
 
-  &__main {
-    font-size: 4.4rem;
+  &__subtitle {
+    display: inline-block;
+    font-size: 4.5rem;
     font-weight: 600;
     letter-spacing: 1px;
-    // text-transform: capitalize;
+
+    span {
+      text-transform: uppercase;
+    }
+
+    &--body {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+.pg {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: justify;
+
+  @include atMD {
+    font-size: 1.6rem;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
