@@ -37,4 +37,22 @@
   &--recipes {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/recipes-bg.jpg');
   }
+
+  &--video {
+    padding: 0;
+    height: auto;
+    text-align: center;
+
+    @include atMD {
+      height: 50rem;
+    }
+
+    video {
+      height: 100%;
+
+      @include atMD {
+        border-radius: 4px;
+      }
+    }
+  }
 }
