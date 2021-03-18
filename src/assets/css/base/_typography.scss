@@ -2,6 +2,14 @@
   margin: 0;
   text-align: center;
 
+  &--spacing-top {
+    margin-top: 2rem;
+
+    @include atMD {
+      margin-top: 0;
+    }
+  }
+
   &__title {
     display: block;
     color: $font-color-secondary;
@@ -52,4 +60,35 @@
   p:not(:last-child) {
     margin-bottom: 2rem;
   }
+}
+
+.content-block {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @include atMD {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  h2 {
+    text-align: center;
+
+    @include atMD {
+      text-align: left;
+    }
+  }
+}
+
+.content-block__asterisk {
+  margin: 1rem 0;
+  font-size: 1rem;
+
+  @include atMD {
+    display: none;
+  }
+}
+
+span.lc {
+  text-transform: lowercase;
 }

@@ -1,12 +1,4 @@
 .entrees {
-  &__content {
-    @extend .our-story__content;
-  }
-
-  &__asterisk {
-    @extend .our-story__asterisk;
-  }
-
   &__img-set {
     display: flex;
 
