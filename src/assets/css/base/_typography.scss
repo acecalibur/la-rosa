@@ -45,6 +45,7 @@
   text-align: justify;
 
   @include atMD {
+    margin-top: 1rem;
     font-size: 1.6rem;
   }
 

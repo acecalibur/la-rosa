@@ -1,0 +1,62 @@
+.entrees {
+  &__content {
+    @extend .our-story__content;
+  }
+
+  &__asterisk {
+    @extend .our-story__asterisk;
+  }
+
+  &__img-set {
+    display: flex;
+
+    @include atMD {
+      position: relative;
+
+      &:hover .entrees__img:not(:hover) {
+        transform: scale(0.85);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    @include atMD {
+      position: absolute;
+      width: 60%;
+      box-shadow: $box-shadow;
+      border-radius: 4px;
+      outline-offset: 12px;
+      transition: all 0.25s ease;
+
+      &:hover {
+        z-index: 10;
+        transform: scale(1.15);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+        outline: 6px solid $font-color-secondary;
+      }
+    }
+  }
+
+  &__img--1 {
+    @include atMD {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &__img--2 {
+    @include atMD {
+      right: 0;
+      top: 6rem;
+    }
+  }
+
+  &__img--3 {
+    @include atMD {
+      left: 20%;
+      top: 15rem;
+    }
+  }
+}

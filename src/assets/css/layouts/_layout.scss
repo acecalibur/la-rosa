@@ -1,12 +1,21 @@
 .flex {
-  display: block;
+  display: flex;
+  flex-direction: column;
 
   @include atMD {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
 
     .col__6 {
       flex: 0 0 45%;
+    }
+  }
+
+  .col__6--last {
+    order: 1;
+
+    @include atMD {
+      order: 0;
     }
   }
 }

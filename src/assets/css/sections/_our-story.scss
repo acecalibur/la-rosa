@@ -1,9 +1,11 @@
 .our-story {
   &__content {
     margin-bottom: 2rem;
+    text-align: center;
 
     @include atMD {
       margin-bottom: 0;
+      text-align: left;
     }
 
     h2 {
@@ -13,8 +15,6 @@
         text-align: left;
       }
     }
-
-    text-align: center;
   }
 
   &__asterisk {
@@ -31,12 +31,6 @@
 
     img {
       border-radius: 1rem;
-    }
-  }
-
-  &__text {
-    @include atMD {
-      margin-top: 1rem;
     }
   }
 }
