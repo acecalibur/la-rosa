@@ -6,6 +6,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    &--align-center {
+      align-items: center;
+    }
+
     .col__6 {
       flex: 0 0 45%;
     }

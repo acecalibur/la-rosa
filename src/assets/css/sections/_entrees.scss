@@ -1,13 +1,19 @@
 .entrees {
   &__img-set {
     display: flex;
+    height: 100%;
 
     @include atMD {
       position: relative;
+      margin-top: 5rem;
 
       &:hover .entrees__img:not(:hover) {
         transform: scale(0.85);
       }
+    }
+
+    @include atLG {
+      margin-top: 0;
     }
   }
 
