@@ -51,4 +51,17 @@
   &--spacing-top {
     margin-top: 2rem;
   }
+
+  &--newsletter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -3.5rem;
+    border: none;
+    padding: 4px 8px;
+    background-color: transparent;
+    color: $font-color-primary;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 }

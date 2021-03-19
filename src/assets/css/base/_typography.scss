@@ -60,6 +60,19 @@
   p:not(:last-child) {
     margin-bottom: 2rem;
   }
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--narrow {
+    margin: 0 auto;
+    max-width: 60rem;
+  }
+
+  &--spaced {
+    line-height: 1.75;
+  }
 }
 
 .content-block {

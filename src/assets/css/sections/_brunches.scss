@@ -1,6 +1,12 @@
 .brunches {
   &__img-set {
     @extend .menu__img-set;
+
+    margin-bottom: 2.5rem;
+
+    @include atMD {
+      margin-bottom: 0;
+    }
   }
 
   img {
