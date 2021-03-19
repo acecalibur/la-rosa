@@ -1,5 +1,5 @@
-.our-menu {
-  &__img-group {
+.menu {
+  &__img-set {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
