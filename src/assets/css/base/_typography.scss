@@ -1,6 +1,7 @@
 .headline {
   margin: 0;
   text-align: center;
+  backface-visibility: hidden;
 
   &--spacing-top {
     margin-top: 2rem;
@@ -17,6 +18,7 @@
     font-size: 6rem;
     font-weight: 300;
     line-height: 1;
+    animation: fadeUp 0.5s ease-in-out 0.5s backwards;
 
     &::first-letter {
       font-size: 8.5rem;
@@ -36,6 +38,7 @@
     font-size: 4.5rem;
     font-weight: 600;
     letter-spacing: 1px;
+    animation: scale 0.5s ease-in-out;
 
     span {
       text-transform: uppercase;

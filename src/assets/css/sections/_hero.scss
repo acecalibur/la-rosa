@@ -1,4 +1,5 @@
 .hero {
+  backface-visibility: hidden;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,6 +13,7 @@
 
   &__text {
     text-align: center;
+    animation: fadeIn 0.5s ease-in-out 1s backwards;
   }
 
   &__separator {
@@ -51,6 +53,7 @@
     margin: 0 1.5rem;
     color: $font-color-secondary;
     font-size: 1.2rem;
+    animation: spinner 0.5s ease-in-out 1.25s backwards;
   }
 
   &__msg {
