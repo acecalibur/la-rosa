@@ -29,8 +29,8 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // MiniCssExtractPlugin.loader,
-          'style-loader',
+          MiniCssExtractPlugin.loader,
+          // 'style-loader',
           'css-loader',
           {
             loader: 'postcss-loader',
@@ -72,9 +72,9 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    // new MiniCssExtractPlugin({
-    //   filename: '[name].[contenthash].css',
-    // }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
